@@ -1,0 +1,50 @@
+@import url(./colors.scss);
+
+nav{
+    background-color: rgb(94, 202, 207);
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 2rem;
+    height: 3rem;
+
+
+
+    h2{
+        text-transform: uppercase;
+        color: $primary;
+    
+    }
+    >div{
+        display:flex;
+        align-items: center;
+
+
+        a{
+            color: $primary;
+            font-size: 1.2rem;
+            margin: 0 1rem;
+            transition: all 0.3s;
+            &:hover{
+                opacity: 0.5;
+            }
+
+            >p{
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.829);
+                border-radius: 50%;
+                width: 15px;
+                height: 15px;
+                display: grid;
+                place-items: center;
+                transform: translate(80%,-80%);
+                color: #fff;
+                font-size: 0.7rem;
+                font-family: 'roboto';
+            }
+        }
+    }
+}
+
+
+
+
